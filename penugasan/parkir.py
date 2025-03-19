@@ -2,10 +2,10 @@ from datetime import datetime
 import math
 
 parkir = []
-maxSlot = 20
+max_slot = 20
 
 def registrasi(motor):
-  if(len(parkir) < maxSlot):
+  if(len(parkir) < max_slot):
     parkir.append(motor)
     motor.lama_parkir = datetime.now()
     print(f'Motor dengan plat {motor.plat} telah terparkir')
@@ -13,7 +13,7 @@ def registrasi(motor):
     print('Tidak bisa memarkir motor, parkiran sudah penuh')
 
 def slot():
-  return(maxSlot - len(parkir))
+  return(max_slot - len(parkir))
 
 def lihat_semua():
   print('Daftar Motor Terparkir:')
