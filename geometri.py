@@ -11,3 +11,4 @@ def hitung_luas_lingkaran(jari_jari):
 
 def hello_pray():
     return "Echo hallo pray"
+
